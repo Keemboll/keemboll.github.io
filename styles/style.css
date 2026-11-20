@@ -24,17 +24,17 @@
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
 
-  --paper: #f1f4f8;
-  --grid: rgba(18, 28, 46, 0.06);
-  --card: #ffffff;
-  --ink: #121c2e;
-  --muted: #4d5c76;
-  --line: #c3cddd;
-  --cobalt: #2446e8;
-  --cobalt-soft: rgba(36, 70, 232, 0.1);
-  --marigold: #f5b301;
+  --paper: #0c1427;
+  --grid: rgba(255, 255, 255, 0.05);
+  --card: #121d38;
+  --ink: #e9eefa;
+  --muted: #9eabc6;
+  --line: #2a3a62;
+  --cobalt: #8aa0ff;
+  --cobalt-soft: rgba(138, 160, 255, 0.14);
+  --marigold: #ffc93c;
   --on-marigold: #121c2e;
 
   --sans: "Schibsted Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -47,19 +47,21 @@
   --step-5: clamp(2.5rem, 6.4vw, 4.9rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #0c1427;
-    --grid: rgba(255, 255, 255, 0.05);
-    --card: #121d38;
-    --ink: #e9eefa;
-    --muted: #9eabc6;
-    --line: #2a3a62;
-    --cobalt: #8aa0ff;
-    --cobalt-soft: rgba(138, 160, 255, 0.14);
-    --marigold: #ffc93c;
-    --on-marigold: #121c2e;
-  }
+
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --paper: #f1f4f8;
+  --grid: rgba(18, 28, 46, 0.06);
+  --card: #ffffff;
+  --ink: #121c2e;
+  --muted: #4d5c76;
+  --line: #c3cddd;
+  --cobalt: #2446e8;
+  --cobalt-soft: rgba(36, 70, 232, 0.1);
+  --marigold: #f5b301;
+  --on-marigold: #121c2e;
 }
 
 *,
@@ -567,4 +569,18 @@ a:hover {
     stroke-dashoffset: 0;
     opacity: 1;
   }
+}
+
+.theme-toggle {
+  font: inherit;
+  color: var(--ink);
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--cobalt);
 }
