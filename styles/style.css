@@ -27,7 +27,7 @@
   color-scheme: dark;
 
   --paper: #0a0a0a;
-  --grid: rgba(255, 255, 255, 0.04);
+  --grid: rgba(255, 255, 255, 0.025);
   --card: #171717;
   --ink: #fafafa;
   --muted: #a3a3a3;
