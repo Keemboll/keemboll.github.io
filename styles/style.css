@@ -26,12 +26,12 @@
 :root {
   color-scheme: dark;
 
-  --paper: #0c1427;
-  --grid: rgba(255, 255, 255, 0.05);
-  --card: #121d38;
-  --ink: #e9eefa;
-  --muted: #9eabc6;
-  --line: #2a3a62;
+  --paper: #0a0a0a;
+  --grid: rgba(255, 255, 255, 0.04);
+  --card: #171717;
+  --ink: #fafafa;
+  --muted: #a3a3a3;
+  --line: #262626;
   --cobalt: #8aa0ff;
   --cobalt-soft: rgba(138, 160, 255, 0.14);
   --marigold: #ffc93c;
